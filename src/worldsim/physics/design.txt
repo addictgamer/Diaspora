@@ -1,0 +1,9 @@
+atom.hpp contains code for atoms.
+molecule.hpp contains code for molecules.
+
+TODO: Figure out how to get all this psuedo-simming correctly, and how to realistically simulate all this.
+Also figure out how the universe works so that I can properly simulate all this.
+For now, I'll just have to use programmed reactions...And then figure out how everything works as I'll get ideas by attempting to simulate the universe.
+I'll become a great theoretical phsycist and crazy blarg like that!
+Blarg.
+I'm gonna have to study more theoretical physics and see what's feasible regarding how the universe works.

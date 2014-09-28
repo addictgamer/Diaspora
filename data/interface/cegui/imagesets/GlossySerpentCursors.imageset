@@ -1,0 +1,17 @@
+<Imageset autoScaled="false" imagefile="GlossySerpentCursors.png" name="GlossySerpentCursors" nativeHorzRes="1366" nativeVertRes="768" version="2">
+
+  
+	<Image XOffset="-1" YOffset="-1" height="32" name="MouseArrow" width="32" xPos="5" yPos="5" />
+
+	<Image XOffset="-16" YOffset="-16" height="32" name="MouseMoveCursor" width="32" xPos="50" yPos="5" />
+
+	<Image XOffset="-16" YOffset="-16" height="32" name="MouseEsWeCursor" width="32" xPos="150" yPos="5" />
+	<Image XOffset="-16" YOffset="-16" height="32" name="MouseNoSoCursor" width="32" xPos="200" yPos="5" />
+	<Image XOffset="-16" YOffset="-16" height="32" name="MouseNeSwCursor" width="32" xPos="250" yPos="5" />
+	<Image XOffset="-16" YOffset="-16" height="32" name="MouseNwSeCursor" width="32" xPos="300" yPos="5" />
+  
+  
+
+	<Image XOffset="-1" YOffset="-1" height="32" name="MouseTextBar" width="32" xPos="5" yPos="5" />
+  
+</Imageset>

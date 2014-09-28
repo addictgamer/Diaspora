@@ -1,0 +1,41 @@
+#!/bin/sh
+# cm - CMake shortcut command
+
+# set GETDEPS to make it force getting them
+if [ "$USER" == "ciprian" ] || [ -n "$GETDEPS" ] ; then
+
+if ./dependencies.sh
+then
+	echo "Dependencies built."
+else
+	echo "Failed to build dependences" && exit 1
+fi
+
+export GENGINE_ROOT="dependencies/debug/gengine"
+
+fi # user check
+
+SOURCE_DIR=$(printf "%q" "$PWD") # escapes the dir with backslashes
+
+mkdir -p build/debug
+
+cd build/debug
+
+# If CMake cannot find one of these, uncomment and write the correct path
+#export GLEW_ROOT="E:/Projects/C++/Libs/glew-1.7.0"
+#export GLM_ROOT="E:/Projects/C++/Libs/glm-0.9.3.4"
+
+# SFML
+#export SFML_ROOT="E:/Projects/C++/Libs/SFML-2.0-rc-gcc"
+
+
+# Change this to Unix Makefiles on Linux
+cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=$SOURCE_DIR -G "Unix Makefiles" ../..
+
+#make -j8
+make
+
+#For lazy programmers like me.
+cd ../..
+rm ./diaspora
+ln -s ./build/debug/diaspora ./diaspora

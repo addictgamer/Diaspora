@@ -1,0 +1,406 @@
+<Imageset autoScaled="true" imagefile="GlossySerpent.png" name="GlossySerpent" nativeHorzRes="1366" nativeVertRes="768" version="2">
+
+  
+
+   
+	<Image height="10" name="SimplePanelBorder_TL" width="10" xPos="80" yPos="125" />
+	<Image height="44" name="SimplePanelBorder_L" width="10" xPos="80" yPos="135" />
+	<Image height="10" name="SimplePanelBorder_BL" width="10" xPos="80" yPos="179" />
+	<Image height="10" name="SimplePanelBorder_T" width="44" xPos="90" yPos="125" />
+	<Image height="44" name="SimplePanelBorder_M" width="44" xPos="90" yPos="135" />
+	<Image height="10" name="SimplePanelBorder_B" width="44" xPos="90" yPos="179" />
+	<Image height="10" name="SimplePanelBorder_TR" width="10" xPos="134" yPos="125" />
+	<Image height="44" name="SimplePanelBorder_R" width="10" xPos="134" yPos="135" />
+	<Image height="10" name="SimplePanelBorder_BR" width="10" xPos="134" yPos="179" />
+  
+	<Image height="8" name="SimplePanelBck_TL" width="8" xPos="5" yPos="400" />
+	<Image height="48" name="SimplePanelBck_L" width="8" xPos="5" yPos="408" />
+	<Image height="8" name="SimplePanelBck_BL" width="8" xPos="5" yPos="456" />
+	<Image height="8" name="SimplePanelBck_T" width="48" xPos="13" yPos="400" />
+	<Image height="48" name="SimplePanelBck_M" width="48" xPos="13" yPos="408" />
+	<Image height="8" name="SimplePanelBck_B" width="48" xPos="13" yPos="456" />
+	<Image height="8" name="SimplePanelBck_TR" width="8" xPos="61" yPos="400" />
+	<Image height="48" name="SimplePanelBck_R" width="8" xPos="61" yPos="408" />
+	<Image height="8" name="SimplePanelBck_BR" width="8" xPos="61" yPos="456" />
+
+  
+  <Image height="13" name="Button32_4D_TL" width="15" xPos="215" yPos="295" />
+  <Image height="7" name="Button32_4D_L" width="15" xPos="215" yPos="308" />
+  <Image height="12" name="Button32_4D_BL" width="15" xPos="215" yPos="315" />
+  <Image height="13" name="Button32_4D_T" width="34" xPos="230" yPos="295" />
+  <Image height="7" name="Button32_4D_M" width="34" xPos="230" yPos="308" />
+  <Image height="12" name="Button32_4D_B" width="34" xPos="230" yPos="315" />
+  <Image height="13" name="Button32_4D_TR" width="15" xPos="264" yPos="295" />
+  <Image height="7" name="Button32_4D_R" width="15" xPos="264" yPos="308" />
+  <Image height="12" name="Button32_4D_BR" width="15" xPos="264" yPos="315" />
+  
+  
+  <Image height="28" name="Button32_4D_Background" width="54" xPos="220" yPos="332" />
+  <Image height="28" name="Button32_4D_BackgHighlight" width="54" xPos="220" yPos="367" />
+
+  
+  <Image height="13" name="Button32_2C_TL" width="15" xPos="280" yPos="295" />
+  <Image height="7" name="Button32_2C_L" width="15" xPos="280" yPos="308" />
+  <Image height="12" name="Button32_2C_BL" width="15" xPos="280" yPos="315" />
+  <Image height="13" name="Button32_2C_T" width="34" xPos="295" yPos="295" />
+  <Image height="7" name="Button32_2C_M" width="34" xPos="295" yPos="308" />
+  <Image height="12" name="Button32_2C_B" width="34" xPos="295" yPos="315" />
+  <Image height="13" name="Button32_2C_TR" width="15" xPos="329" yPos="295" />
+  <Image height="7" name="Button32_2C_R" width="15" xPos="329" yPos="308" />
+  <Image height="12" name="Button32_2C_BR" width="15" xPos="329" yPos="315" />
+
+
+  
+  <Image height="3" name="MiniButton_TL" width="3" xPos="380" yPos="295" /> 
+  <Image height="26" name="MiniButton_L" width="3" xPos="380" yPos="298" /> 
+  <Image height="3" name="MiniButton_BL" width="3" xPos="380" yPos="324" /> 
+  <Image height="3" name="MiniButton_T" width="26" xPos="383" yPos="295" /> 
+  <Image height="26" name="MiniButton_M" width="26" xPos="383" yPos="298" />
+  <Image height="3" name="MiniButton_B" width="26" xPos="383" yPos="324" /> 
+  <Image height="3" name="MiniButton_TR" width="3" xPos="409" yPos="295" /> 
+  <Image height="26" name="MiniButton_R" width="3" xPos="409" yPos="298" /> 
+  <Image height="3" name="MiniButton_BR" width="3" xPos="409" yPos="324" /> 
+  
+  
+  <Image height="26" name="MiniButton_Background" width="26" xPos="383" yPos="333" />
+  <Image height="26" name="MiniButton_BackgHighlight" width="26" xPos="383" yPos="368" />
+
+
+  
+  
+  
+  
+  <Image height="2" name="ButtonEmpty32_UpL" width="15" xPos="120" yPos="80" />
+  <Image height="2" name="ButtonEmpty32_UpM" width="34" xPos="120" yPos="80" />
+  <Image height="2" name="ButtonEmpty32_UpR" width="15" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_UpT" width="34" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_UpB" width="34" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_UpBL" width="15" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_UpBR" width="15" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_UpTL" width="15" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_UpTR" width="15" xPos="120" yPos="80" />
+
+  <Image height="2" name="ButtonEmpty32_OverL" width="15" xPos="120" yPos="80" />
+  <Image height="2" name="ButtonEmpty32_OverM" width="34" xPos="120" yPos="80" />
+  <Image height="2" name="ButtonEmpty32_OverR" width="15" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_OverT" width="34" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_OverB" width="34" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_OverBL" width="15" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_OverBR" width="15" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_OverTL" width="15" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_OverTR" width="15" xPos="120" yPos="80" />
+
+  <Image height="2" name="ButtonEmpty32_DownL" width="15" xPos="120" yPos="80" />
+  <Image height="2" name="ButtonEmpty32_DownM" width="34" xPos="120" yPos="80" />
+  <Image height="2" name="ButtonEmpty32_DownR" width="15" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_DownT" width="34" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_DownB" width="34" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_DownBL" width="15" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_DownBR" width="15" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_DownTL" width="15" xPos="120" yPos="80" />
+  <Image height="15" name="ButtonEmpty32_DownTR" width="15" xPos="120" yPos="80" />
+
+  
+	<Image height="5" name="StaticTopLeft" width="5" xPos="80" yPos="5" />
+	<Image height="54" name="StaticLeft" width="5" xPos="80" yPos="10" />
+	<Image height="5" name="StaticBottomLeft" width="5" xPos="80" yPos="64" />
+	<Image height="5" name="StaticTop" width="54" xPos="85" yPos="5" />
+	<Image height="54" name="StaticBackdrop" width="54" xPos="85" yPos="10" />
+	<Image height="5" name="StaticBottom" width="54" xPos="85" yPos="64" />
+	<Image height="5" name="StaticTopRight" width="5" xPos="139" yPos="5" />
+	<Image height="54" name="StaticRight" width="5" xPos="139" yPos="10" />
+	<Image height="5" name="StaticBottomRight" width="5" xPos="139" yPos="64" />
+
+  
+	<Image height="32" name="ComboboxEditLeft" width="8" xPos="150" yPos="5" />
+	<Image height="32" name="ComboboxEditMiddle" width="26" xPos="158" yPos="5" />
+	<Image height="32" name="ComboboxEditRight" width="8" xPos="184" yPos="5" />
+
+  
+  <Image height="15" name="ComboboxButtonBorder_TL" width="15" xPos="415" yPos="295" />
+  <Image height="2" name="ComboboxButtonBorder_L" width="15" xPos="415" yPos="310" />
+  <Image height="15" name="ComboboxButtonBorder_BL" width="15" xPos="415" yPos="312" />
+  <Image height="15" name="ComboboxButtonBorder_T" width="15" xPos="430" yPos="295" />
+  <Image height="2" name="ComboboxButtonBorder_M" width="15" xPos="430" yPos="310" /> 
+  <Image height="15" name="ComboboxButtonBorder_B" width="15" xPos="430" yPos="312" />
+  <Image height="15" name="ComboboxButtonBorder_TR" width="15" xPos="445" yPos="295" />
+  <Image height="2" name="ComboboxButtonBorder_R" width="15" xPos="445" yPos="310" /> 
+  <Image height="15" name="ComboboxButtonBorder_BR" width="15" xPos="445" yPos="312" />
+
+  <Image height="32" name="ComboboxButtonBackground" width="45" xPos="415" yPos="330" />
+  <Image height="32" name="ComboboxButtonBackgHighlight" width="45" xPos="415" yPos="365" />
+  <Image height="32" name="ComboboxButtonGlyph" width="45" xPos="460" yPos="295" />
+
+   
+	<Image height="5" name="ComboboxListTopLeft" width="5" xPos="80" yPos="5" />
+	<Image height="54" name="ComboboxListLeft" width="5" xPos="80" yPos="10" />
+	<Image height="5" name="ComboboxListBottomLeft" width="5" xPos="80" yPos="64" />
+  <Image height="5" name="ComboboxListTop" width="54" xPos="85" yPos="5" />
+  <Image height="54" name="ComboboxListBackdrop" width="54" xPos="85" yPos="10" />
+  <Image height="5" name="ComboboxListBottom" width="54" xPos="85" yPos="64" />
+	<Image height="5" name="ComboboxListTopRight" width="5" xPos="139" yPos="5" />
+	<Image height="54" name="ComboboxListRight" width="5" xPos="139" yPos="10" />
+	<Image height="5" name="ComboboxListBottomRight" width="5" xPos="139" yPos="64" />
+
+	<Image height="24" name="ComboboxSelectionBrush" width="96" xPos="285" yPos="248" /> 
+
+  
+	<Image height="32" name="HeaderBarSplitterNormal" width="3" xPos="240" yPos="5" /> 
+	<Image height="32" name="HeaderBarSplitterHover" width="7" xPos="317" yPos="5" /> 
+	<Image height="24" name="HeaderBarSortUp" width="24" xPos="484" yPos="81" /> 
+	<Image height="24" name="HeaderBarSortDown" width="24" xPos="484" yPos="105" /> 
+
+  
+   
+	<Image height="5" name="MultiListTopLeft" width="5" xPos="80" yPos="5" />
+	<Image height="54" name="MultiListLeft" width="5" xPos="80" yPos="10" />
+	<Image height="5" name="MultiListBottomLeft" width="5" xPos="80" yPos="64" />
+	<Image height="5" name="MultiListTop" width="54" xPos="85" yPos="5" />
+	<Image height="54" name="MultiListBackdrop" width="54" xPos="85" yPos="10" />
+	<Image height="5" name="MultiListBottom" width="54" xPos="85" yPos="64" />
+	<Image height="5" name="MultiListTopRight" width="5" xPos="139" yPos="5" />
+	<Image height="54" name="MultiListRight" width="5" xPos="139" yPos="10" />
+	<Image height="5" name="MultiListBottomRight" width="5" xPos="139" yPos="64" />
+
+	<Image height="24" name="MultiListSelectionBrush" width="96" xPos="285" yPos="248" /> 
+  
+	<Image height="24" name="TextSelectionBrush" width="96" xPos="285" yPos="248" /> 
+
+   
+  <Image height="4" name="EditBox_TL" width="4" xPos="149" yPos="5" />
+  <Image height="24" name="EditBox_L" width="4" xPos="149" yPos="9" />
+  <Image height="4" name="EditBox_BL" width="4" xPos="149" yPos="33" />
+  <Image height="4" name="EditBox_T" width="37" xPos="153" yPos="5" />
+  <Image height="24" name="EditBox_M" width="37" xPos="153" yPos="9" />
+  <Image height="4" name="EditBox_B" width="37" xPos="153" yPos="33" />
+  <Image height="4" name="EditBox_TR" width="4" xPos="190" yPos="5" />
+  <Image height="24" name="EditBox_R" width="4" xPos="190" yPos="9" />
+  <Image height="4" name="EditBox_BR" width="4" xPos="190" yPos="33" />
+  
+	<Image height="30" name="EditBoxCarat" width="3" xPos="240" yPos="5" />
+
+  
+	<Image height="32" name="CheckboxMark" width="32" xPos="346" yPos="118" />
+  
+	<Image height="4" name="CheckboxBorder_TL" width="4" xPos="345" yPos="295" />
+	<Image height="24" name="CheckboxBorder_L" width="4" xPos="345" yPos="299" />
+	<Image height="4" name="CheckboxBorder_BL" width="4" xPos="345" yPos="323" />
+	<Image height="4" name="CheckboxBorder_T" width="24" xPos="349" yPos="295" />
+	<Image height="24" name="CheckboxBorder_M" width="24" xPos="349" yPos="299" />
+	<Image height="4" name="CheckboxBorder_B" width="24" xPos="349" yPos="323" />
+	<Image height="4" name="CheckboxBorder_TR" width="4" xPos="373" yPos="295" />
+	<Image height="24" name="CheckboxBorder_R" width="4" xPos="373" yPos="299" />
+	<Image height="4" name="CheckboxBorder_BR" width="4" xPos="373" yPos="323" />
+  
+	<Image height="28" name="CheckboxBackground" width="28" xPos="347" yPos="332" />
+  
+	<Image height="28" name="CheckboxBackgroundHighlight" width="28" xPos="347" yPos="367" />
+
+
+  
+	<Image height="30" name="MiniVertScrollBarSegment" width="7" xPos="317" yPos="5" />
+
+  
+	<Image height="7" name="MiniHorzScrollBarSegment" width="30" xPos="280" yPos="75" /> 
+
+  
+	<Image height="16" name="MiniHorzScrollLeftNormal" width="16" xPos="280" yPos="40" />
+	<Image height="16" name="MiniHorzScrollRightNormal" width="16" xPos="296" yPos="40" />
+
+
+  
+  <Image height="4" name="HorzScrollThumbBorder_TL" width="4" xPos="390" yPos="190" />
+  <Image height="12" name="HorzScrollThumbBorder_L" width="4" xPos="390" yPos="194" />
+  <Image height="4" name="HorzScrollThumbBorder_BL" width="4" xPos="390" yPos="206" />
+  <Image height="4" name="HorzScrollThumbBorder_T" width="32" xPos="394" yPos="190" />
+  <Image height="12" name="HorzScrollThumbBorder_M" width="32" xPos="394" yPos="194" />
+  <Image height="4" name="HorzScrollThumbBorder_B" width="32" xPos="394" yPos="206" /> 
+  <Image height="4" name="HorzScrollThumbBorder_TR" width="4" xPos="426" yPos="190" /> 
+  <Image height="12" name="HorzScrollThumbBorder_R" width="4" xPos="426" yPos="194" /> 
+  <Image height="4" name="HorzScrollThumbBorder_BR" width="4" xPos="426" yPos="206" /> 
+
+  <Image height="14" name="HorzScrollThumb_Background" width="34" xPos="393" yPos="213" />
+  <Image height="14" name="HorzScrollThumb_BackgHighlight" width="34" xPos="393" yPos="233" />
+
+    
+  <Image height="4" name="VertScrollThumbBorder_TL" width="4" xPos="440" yPos="145" /> 
+  <Image height="32" name="VertScrollThumbBorder_L" width="4" xPos="440" yPos="149" /> 
+  <Image height="4" name="VertScrollThumbBorder_BL" width="4" xPos="440" yPos="181" /> 
+  <Image height="4" name="VertScrollThumbBorder_T" width="12" xPos="444" yPos="145" /> 
+  <Image height="32" name="VertScrollThumbBorder_M" width="12" xPos="444" yPos="149" />
+  <Image height="4" name="VertScrollThumbBorder_B" width="12" xPos="444" yPos="181" /> 
+  <Image height="4" name="VertScrollThumbBorder_TR" width="4" xPos="456" yPos="145" /> 
+  <Image height="32" name="VertScrollThumbBorder_R" width="4" xPos="456" yPos="149" /> 
+  <Image height="4" name="VertScrollThumbBorder_BR" width="4" xPos="456" yPos="181" /> 
+
+  <Image height="34" name="VertScrollThumb_Background" width="14" xPos="463" yPos="148" />
+  <Image height="34" name="VertScrollThumb_BackgHighlight" width="14" xPos="483" yPos="148" />
+
+
+  
+  
+	<Image height="5" name="ListboxTopLeft" width="5" xPos="80" yPos="5" />
+	<Image height="54" name="ListboxLeft" width="5" xPos="80" yPos="10" />
+	<Image height="5" name="ListboxBottomLeft" width="5" xPos="80" yPos="64" />
+	<Image height="5" name="ListboxTop" width="54" xPos="85" yPos="5" />
+	<Image height="54" name="ListboxBackdrop" width="54" xPos="85" yPos="10" />
+	<Image height="5" name="ListboxBottom" width="54" xPos="85" yPos="64" />
+	<Image height="5" name="ListboxTopRight" width="5" xPos="139" yPos="5" />
+	<Image height="54" name="ListboxRight" width="5" xPos="139" yPos="10" />
+	<Image height="5" name="ListboxBottomRight" width="5" xPos="139" yPos="64" />
+  
+  
+  
+	<Image height="24" name="ListboxSelectionBrush" width="96" xPos="285" yPos="248" /> 
+  
+  
+	<Image height="5" name="TooltipTopLeft" width="5" xPos="80" yPos="225" />
+	<Image height="54" name="TooltipLeftEdge" width="5" xPos="80" yPos="230" />
+	<Image height="5" name="TooltipBottomLeft" width="5" xPos="80" yPos="284" />
+	<Image height="5" name="TooltipTopEdge" width="54" xPos="85" yPos="225" />
+	<Image height="54" name="TooltipMiddle" width="54" xPos="85" yPos="230" />
+	<Image height="5" name="TooltipBottomEdge" width="54" xPos="85" yPos="284" />
+	<Image height="5" name="TooltipTopRight" width="5" xPos="139" yPos="225" />
+	<Image height="54" name="TooltipRightEdge" width="5" xPos="139" yPos="230" />
+	<Image height="5" name="TooltipBottomRight" width="5" xPos="139" yPos="284" />
+
+  
+   
+	<Image height="5" name="MultiLineEditboxTopLeft" width="5" xPos="80" yPos="5" />
+	<Image height="54" name="MultiLineEditboxLeft" width="5" xPos="80" yPos="10" />
+	<Image height="5" name="MultiLineEditboxBottomLeft" width="5" xPos="80" yPos="64" />
+	<Image height="5" name="MultiLineEditboxTop" width="54" xPos="85" yPos="5" />
+	<Image height="54" name="MultiLineEditboxBackdrop" width="54" xPos="85" yPos="10" />
+	<Image height="5" name="MultiLineEditboxBottom" width="54" xPos="85" yPos="64" />
+	<Image height="5" name="MultiLineEditboxTopRight" width="5" xPos="139" yPos="5" />
+	<Image height="54" name="MultiLineEditboxRight" width="5" xPos="139" yPos="10" />
+	<Image height="5" name="MultiLineEditboxBottomRight" width="5" xPos="139" yPos="64" />
+
+	<Image height="24" name="MultiLineEditboxSelectionBrush" width="96" xPos="285" yPos="248" /> 
+
+  
+	<Image height="5" name="TabButtonBorder_TL" width="5" xPos="160" yPos="155" />
+	<Image height="22" name="TabButtonBorder_L" width="5" xPos="160" yPos="160" />
+	<Image height="5" name="TabButtonBorder_BL" width="5" xPos="160" yPos="182" />
+	<Image height="5" name="TabButtonBorder_T" width="22" xPos="165" yPos="155" />
+	<Image height="22" name="TabButtonBorder_M" width="22" xPos="165" yPos="160" />
+	<Image height="5" name="TabButtonBorder_B" width="22" xPos="165" yPos="182" />
+	<Image height="5" name="TabButtonBorder_TR" width="5" xPos="187" yPos="155" />
+	<Image height="22" name="TabButtonBorder_R" width="5" xPos="187" yPos="160" />
+	<Image height="5" name="TabButtonBorder_BR" width="5" xPos="187" yPos="182" />
+  
+	<Image height="26" name="TabButton_Background" width="26" xPos="198" yPos="158" />
+	<Image height="26" name="TabButton_Backghighlight" width="26" xPos="233" yPos="158" />
+
+  
+   
+	<Image height="5" name="TabContentPaneUpperLeft" width="5" xPos="80" yPos="5" />
+	<Image height="54" name="TabContentPaneLeft" width="5" xPos="80" yPos="10" />
+	<Image height="5" name="TabContentPaneLowerLeft" width="5" xPos="80" yPos="64" />
+	<Image height="5" name="TabContentPaneUpper" width="54" xPos="85" yPos="5" />
+	<Image height="54" name="TabContentPaneMiddle" width="54" xPos="85" yPos="10" />
+	<Image height="5" name="TabContentPaneLower" width="54" xPos="85" yPos="64" />
+	<Image height="5" name="TabContentPaneUpperRight" width="5" xPos="139" yPos="5" />
+	<Image height="54" name="TabContentPaneRight" width="5" xPos="139" yPos="10" />
+	<Image height="5" name="TabContentPaneLowerRight" width="5" xPos="139" yPos="64" />
+
+    
+  
+  <Image height="4" name="TitlebarBorder_TL" width="4" xPos="80" yPos="425" />
+  <Image height="24" name="TitlebarBorder_L" width="4" xPos="80" yPos="429" />
+  <Image height="4" name="TitlebarBorder_BL" width="4" xPos="80" yPos="453" />
+  <Image height="4" name="TitlebarBorder_T" width="120" xPos="84" yPos="425" />
+  <Image height="24" name="TitlebarBorder_M" width="120" xPos="84" yPos="429" />
+  <Image height="4" name="TitlebarBorder_B" width="120" xPos="84" yPos="453" /> 
+  <Image height="4" name="TitlebarBorder_TR" width="4" xPos="204" yPos="425" /> 
+  <Image height="24" name="TitlebarBorder_R" width="4" xPos="204" yPos="429" /> 
+  <Image height="4" name="TitlebarBorder_BR" width="4" xPos="204" yPos="453" /> 
+
+  <Image height="24" name="TitlebarBackground" width="120" xPos="214" yPos="429" /> 
+  <Image height="24" name="TitlebarBackghighlight" width="120" xPos="344" yPos="429" /> 
+  
+  
+	<Image height="10" name="WindowTopLeft" width="10" xPos="80" yPos="125" />
+	<Image height="44" name="WindowLeftEdge" width="10" xPos="80" yPos="135" />
+	<Image height="10" name="WindowBottomLeft" width="10" xPos="80" yPos="179" />
+	<Image height="10" name="WindowTopEdge" width="44" xPos="90" yPos="125" />
+	<Image height="44" name="WindowMid" width="44" xPos="90" yPos="135" />
+	<Image height="10" name="WindowBottomEdge" width="44" xPos="90" yPos="179" />
+	<Image height="10" name="WindowTopRight" width="10" xPos="134" yPos="125" />
+	<Image height="44" name="WindowRightEdge" width="10" xPos="134" yPos="135" />
+	<Image height="10" name="WindowBottomRight" width="10" xPos="134" yPos="179" />
+
+  
+	<Image height="10" name="WindowBck_TL" width="10" xPos="5" yPos="400" />
+	<Image height="44" name="WindowBck_L" width="10" xPos="5" yPos="410" />
+	<Image height="10" name="WindowBck_BL" width="10" xPos="5" yPos="454" />
+	<Image height="10" name="WindowBck_T" width="44" xPos="15" yPos="400" />
+	<Image height="44" name="WindowBck_M" width="44" xPos="15" yPos="410" />
+	<Image height="10" name="WindowBck_B" width="44" xPos="15" yPos="454" />
+	<Image height="10" name="WindowBck_TR" width="10" xPos="59" yPos="400" />
+	<Image height="44" name="WindowBck_R" width="10" xPos="59" yPos="410" />
+	<Image height="10" name="WindowBck_BR" width="10" xPos="59" yPos="454" />
+
+  
+  <Image height="45" name="EmbelishedPanel_TL" width="45" xPos="80" yPos="295" />
+  <Image height="38" name="EmbelishedPanel_L" width="45" xPos="80" yPos="340" />
+  <Image height="45" name="EmbelishedPanel_BL" width="45" xPos="80" yPos="378" />
+  <Image height="45" name="EmbelishedPanel_T" width="38" xPos="125" yPos="295" />
+  <Image height="38" name="EmbelishedPanel_M" width="38" xPos="125" yPos="340" />
+  <Image height="45" name="EmbelishedPanel_B" width="38" xPos="125" yPos="378" />
+  <Image height="45" name="EmbelishedPanel_TR" width="45" xPos="163" yPos="295" />
+  <Image height="38" name="EmbelishedPanel_R" width="45" xPos="163" yPos="340" />
+  <Image height="45" name="EmbelishedPanel_BR" width="45" xPos="163" yPos="378" />
+
+  
+  <Image height="5" name="PanelBackground_TL" width="5" xPos="144" yPos="226" />
+  <Image height="54" name="PanelBackground_L" width="5" xPos="144" yPos="231" />
+  <Image height="5" name="PanelBackground_BL" width="5" xPos="144" yPos="285" />
+  <Image height="5" name="PanelBackground_T" width="54" xPos="149" yPos="226" />
+  <Image height="54" name="PanelBackground_M" width="54" xPos="149" yPos="231" />
+  <Image height="5" name="PanelBackground_B" width="54" xPos="149" yPos="285" />
+  <Image height="54" name="PanelBackground_TR" width="5" xPos="203" yPos="226" />
+  <Image height="54" name="PanelBackground_R" width="5" xPos="203" yPos="231" />
+  <Image height="5" name="PanelBackground_BR" width="5" xPos="203" yPos="285" />
+
+  
+  <Image height="14" name="ProgressBar_HD_TL" width="15" xPos="385" yPos="65" />
+  <Image height="5" name="ProgressBar_HD_L" width="15" xPos="385" yPos="79" />
+  <Image height="13" name="ProgressBar_HD_BL" width="15" xPos="385" yPos="84" />
+  <Image height="14" name="ProgressBar_HD_T" width="34" xPos="400" yPos="65" />
+  <Image height="5" name="ProgressBar_HD_M" width="34" xPos="400" yPos="79" />
+  <Image height="13" name="ProgressBar_HD_B" width="34" xPos="400" yPos="84" />
+  <Image height="14" name="ProgressBar_HD_TR" width="15" xPos="434" yPos="65" />
+  <Image height="5" name="ProgressBar_HD_R" width="15" xPos="434" yPos="79" />
+  <Image height="13" name="ProgressBar_HD_BR" width="15" xPos="434" yPos="84" />
+
+  
+  <Image height="14" name="ProgressBar_HD_TL_Redux" width="12" xPos="388" yPos="65" />
+  <Image height="5" name="ProgressBar_HD_L_Redux" width="12" xPos="388" yPos="79" />
+  <Image height="13" name="ProgressBar_HD_BL_Redux" width="12" xPos="388" yPos="84" />
+  <Image height="14" name="ProgressBar_HD_TR_Redux" width="12" xPos="434" yPos="65" />
+  <Image height="5" name="ProgressBar_HD_R_Redux" width="12" xPos="434" yPos="79" />
+  <Image height="13" name="ProgressBar_HD_BR_Redux" width="12" xPos="434" yPos="84" />
+
+  
+	<Image height="16" name="ProgressBarLitSegment" width="64" xPos="385" yPos="30" />
+	<Image height="16" name="ProgressBarGraySegment" width="64" xPos="385" yPos="13" />
+
+  <Image height="24" name="ProgressBar_BackgHighlight" width="54" xPos="390" yPos="104" />
+
+  
+  <Image height="24" name="EmptyGlyph24" width="24" xPos="120" yPos="80" />
+
+  
+	<Image height="24" name="GlyphBlack" width="24" xPos="480" yPos="5" />
+	<Image height="24" name="GlyphArrowRight" width="24" xPos="480" yPos="29" />
+	<Image height="24" name="GlyphArrowLeft" width="24" xPos="480" yPos="53" />
+	<Image height="24" name="GlyphArrowUp" width="24" xPos="480" yPos="77" />
+	<Image height="24" name="GlyphArrowDown" width="24" xPos="480" yPos="101" />
+	<Image height="24" name="GlyphX" width="24" xPos="351" yPos="88" />
+  
+	<Image height="24" name="GlyphShield" width="24" xPos="450" yPos="5" />
+	<Image height="24" name="GlyphExit" width="24" xPos="488" yPos="464" />
+	<Image height="24" name="GlyphBack" width="24" xPos="488" yPos="488" />
+  
+</Imageset>

@@ -1,0 +1,6 @@
+diaspora
+bin
+build
+*.log
+.directory
+dependencies

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+	<Window type="DefaultWindow" name="FolderSelector" >
+		<Property name="MousePassThroughEnabled" value="true" />
+		<Property name="MaxSize" value="{{1,0},{1,0}}" />
+		<Property name="Area" value="{{0,0},{0,0},{1,0},{1,0}}" />
+		<Window type="TaharezLook/FrameWindow" name="Frame" >
+			<Property name="Text" value="Select Folder" />
+			<Property name="TitlebarFont" value="DejaVuSans-10" />
+			<Property name="MaxSize" value="{{1,0},{1,0}}" />
+			<Property name="TitlebarEnabled" value="True" />
+			Property name="Area" value="{{0.322461,0},{0.237659,0},{0.728711,0},{0.79682,0}}" />
+			Property name="Area" value="{{0.5,-200},{0.5,-250},{0.5,200},{0.5,250}}" />
+			<Property name="Area" value="{{0.5,-300},{0.5,-250},{0.5,100},{0.5,250}}" />
+			<Window type="TaharezLook/Button" name="Ok" >
+				<Property name="Text" value="OK" />
+				<Property name="MaxSize" value="{{1,0},{1,0}}" />
+				<Property name="Area" value="{{0.711539,0},{0.898179,0},{0.915865,0},{0.963879,0}}" />
+				Property name="Area" value="{{0.711539,-20},{0.898179,0},{0.915865,0},{0.963879,0}}" />
+			</Window>
+			<Window type="TaharezLook/Button" name="Cancel" >
+				<Property name="Font" value="DejaVuSans-10" />
+				<Property name="Text" value="CANCEL" />
+				<Property name="MaxSize" value="{{1,0},{1,0}}" />
+				<Property name="Area" value="{{0.461058,0},{0.898122,0},{0.665385,0},{0.963823,0}}" />
+				Property name="Area" value="{{0,10},{0.898122,0},{0,90},{0.963823,0}}" />
+			</Window>
+			<Window type="TaharezLook/Editbox" name="Address" >
+				<Property name="ReadOnly" value="True" />
+				<Property name="MaxTextLength" value="1073741823" />
+				<Property name="MaxSize" value="{{1,0},{1,0}}" />
+				<Property name="Area" value="{{0.0908655,0},{0.111149,0},{0.903365,0},{0.1814,0}}" />
+			</Window>
+			<Window type="TaharezLook/Listbox" name="FolderList" >
+				<Property name="MaxSize" value="{{1,0},{1,0}}" />
+				<Property name="Area" value="{{0.0874999,0},{0.213425,0},{0.907212,0},{0.866154,0}}" />
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

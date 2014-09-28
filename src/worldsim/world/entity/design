@@ -1,0 +1,17 @@
+I don't know how to do this. Let's see...some ideas I've had:
+
+1)
+
+So, each entity wraps some space or something. Or at the very least, each entity points to some space that it "hooks" into. For example, the eye of the some creature.
+These hooks are used to convert in-game data to data that means something to us and the players. So, for example, an eye hook could tell the renderer "HAY, I GOT THIS GRID HERE. 0,0 is RED LIGHT IS HITTING HER, 0,1 IS BLUE LIGHT IS HITTING HERE, 0,2 IS YELLOW LIGHT IS HITTING HERE, 0,3 IS ORANGE LIGHT IS HITTING HERE" and so on and so forth. So, it's telling us what kind of light is hitting what part of the eye. This info is used to create an image that means something to us. It's what I like to call, real raytracing. Or something. Simulate light and we get a raytracer that does all the work for us (not really). So...
+
+Some questions I have:
+
+How do hooks keep up with the space?
+How exactly do I simulate light?
+How do I move this eyeball around?
+Where do I begin and how do I do it all?
+
+
+
+I might as well try something and see where it leads. Always gotta start somewhere. I just hope this isn't a waste of time.
