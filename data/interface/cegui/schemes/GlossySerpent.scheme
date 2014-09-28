@@ -1,0 +1,69 @@
+<GUIScheme name="GlossySerpent" version="5">
+  <Imageset filename="GlossySerpent.imageset" name="GlossySerpent" />
+  <Imageset filename="GlossySerpentCursors.imageset" name="GlossySerpentCursors" />
+  
+  
+	<Font filename="DejaVuSans-HD-10.font" name="DejaVuSans-HD-10" />
+	<Font filename="DejaVuSerif-HD-8.font" name="DejaVuSerif-HD-8" />
+	<Font filename="DejaVuSerif-HD-10.font" name="DejaVuSerif-HD-10" />
+	<Font filename="DejaVuSerif-HD-12.font" name="DejaVuSerif-HD-12" />
+	<Font filename="DejaVuSerif-HD-16.font" name="DejaVuSerif-HD-16" />
+
+	<Font filename="OpenSans-Regular-10.font" name="OpenSans-Regular-10" />
+	<Font filename="OpenSans-Regular-12.font" name="OpenSans-Regular-12" />
+	<Font filename="OpenSans-Regular-14.font" name="OpenSans-Regular-14" />
+	<Font filename="OpenSans-Regular-16.font" name="OpenSans-Regular-16" />
+  
+  <Font filename="BreeSerif-Regular-10.font" name="BreeSerif-Regular-10" />
+  <Font filename="BreeSerif-Regular-12.font" name="BreeSerif-Regular-12" />
+  <Font filename="BreeSerif-Regular-14.font" name="BreeSerif-Regular-14" />
+  <Font filename="BreeSerif-Regular-16.font" name="BreeSerif-Regular-16" />
+  
+	<LookNFeel filename="GlossySerpent.looknfeel" />
+	<WindowRendererSet filename="CEGUICoreWindowRendererSet" />
+	<FalagardMapping lookNFeel="GlossySerpent/Button32" renderer="Core/Button" targetType="CEGUI/PushButton" windowType="GlossySerpent/Button32" />
+	<FalagardMapping lookNFeel="GlossySerpent/Button32_4C" renderer="Core/Button" targetType="CEGUI/PushButton" windowType="GlossySerpent/Button32_4C" />
+	<FalagardMapping lookNFeel="GlossySerpent/Button32" renderer="Core/Button" targetType="CEGUI/PushButton" windowType="GlossySerpent/Button" />
+	<FalagardMapping lookNFeel="GlossySerpent/Checkbox" renderer="Core/ToggleButton" targetType="CEGUI/ToggleButton" windowType="GlossySerpent/Checkbox" />
+	<FalagardMapping lookNFeel="GlossySerpent/Checkbox" renderer="Core/ToggleButton" targetType="CEGUI/ToggleButton" windowType="GlossySerpent/Checkbox32" /> 
+	<FalagardMapping lookNFeel="GlossySerpent/ImageButton" renderer="Core/Button" targetType="CEGUI/PushButton" windowType="GlossySerpent/ImageButton" />
+	
+	<FalagardMapping lookNFeel="GlossySerpent/Checkbox" renderer="Core/ToggleButton" targetType="CEGUI/RadioButton" windowType="GlossySerpent/RadioButton" />
+	<FalagardMapping lookNFeel="GlossySerpent/FrameWindow" renderer="Core/FrameWindow" targetType="CEGUI/FrameWindow" windowType="GlossySerpent/FrameWindow" />
+	<FalagardMapping lookNFeel="GlossySerpent/Titlebar" renderer="Core/Titlebar" targetType="CEGUI/Titlebar" windowType="GlossySerpent/Titlebar" />
+	<FalagardMapping lookNFeel="GlossySerpent/GlyphButton" renderer="Core/Button" targetType="CEGUI/PushButton" windowType="GlossySerpent/SystemButton" />
+	<FalagardMapping lookNFeel="GlossySerpent/SystemButton32" renderer="Core/Button" targetType="CEGUI/PushButton" windowType="GlossySerpent/SystemButton32" />
+	<FalagardMapping lookNFeel="GlossySerpent/Editbox" renderer="Core/Editbox" targetType="CEGUI/Editbox" windowType="GlossySerpent/Editbox" />
+	<FalagardMapping lookNFeel="GlossySerpent/MultiLineEditbox" renderer="Core/MultiLineEditbox" targetType="CEGUI/MultiLineEditbox" windowType="GlossySerpent/MultiLineEditbox" />
+	<FalagardMapping lookNFeel="GlossySerpent/SimplePanel" renderer="Core/Default" targetType="DefaultWindow" windowType="GlossySerpent/SimplePanel" />
+	<FalagardMapping lookNFeel="GlossySerpent/SerpentPanel" renderer="Core/Default" targetType="DefaultWindow" windowType="GlossySerpent/SerpentPanel" />
+	<FalagardMapping lookNFeel="GlossySerpent/ProgressBar" renderer="Core/ProgressBar" targetType="CEGUI/ProgressBar" windowType="GlossySerpent/ProgressBar" />
+	<FalagardMapping lookNFeel="GlossySerpent/VerticalScrollbar" renderer="Core/Scrollbar" targetType="CEGUI/Scrollbar" windowType="GlossySerpent/VerticalScrollbar" />
+	<FalagardMapping lookNFeel="GlossySerpent/HorizontalScrollbar" renderer="Core/Scrollbar" targetType="CEGUI/Scrollbar" windowType="GlossySerpent/HorizontalScrollbar" />
+	<FalagardMapping lookNFeel="GlossySerpent/VerticalScrollbarThumb" renderer="Core/Button" targetType="CEGUI/Thumb" windowType="GlossySerpent/VerticalScrollbarThumb" />
+	<FalagardMapping lookNFeel="GlossySerpent/HorizontalScrollbarThumb" renderer="Core/Button" targetType="CEGUI/Thumb" windowType="GlossySerpent/HorizontalScrollbarThumb" />
+	<FalagardMapping lookNFeel="GlossySerpent/TabButton" renderer="Core/TabButton" targetType="CEGUI/TabButton" windowType="GlossySerpent/TabButton" />
+	<FalagardMapping lookNFeel="GlossySerpent/TabControl" renderer="Core/TabControl" targetType="CEGUI/TabControl" windowType="GlossySerpent/TabControl" />
+	<FalagardMapping lookNFeel="GlossySerpent/TabContentPane" renderer="Core/Default" targetType="DefaultWindow" windowType="GlossySerpent/TabContentPane" />
+	<FalagardMapping lookNFeel="GlossySerpent/TabButtonPane" renderer="Core/Default" targetType="DefaultWindow" windowType="GlossySerpent/TabButtonPane" />
+	<FalagardMapping lookNFeel="GlossySerpent/GlyphButton" renderer="Core/Button" targetType="CEGUI/PushButton" windowType="GlossySerpent/GlyphButton" />
+	<FalagardMapping lookNFeel="GlossySerpent/GlyphButtonCombo" renderer="Core/Button" targetType="CEGUI/PushButton" windowType="GlossySerpent/GlyphButtonCombo" />
+	<FalagardMapping lookNFeel="GlossySerpent/ComboDropList" renderer="Core/Listbox" targetType="CEGUI/ComboDropList" windowType="GlossySerpent/ComboDropList" />
+	<FalagardMapping lookNFeel="GlossySerpent/ComboEditbox" renderer="Core/Editbox" targetType="CEGUI/Editbox" windowType="GlossySerpent/ComboEditbox" />
+	<FalagardMapping lookNFeel="GlossySerpent/Combobox" renderer="Core/Default" targetType="CEGUI/Combobox" windowType="GlossySerpent/Combobox" />
+	<FalagardMapping lookNFeel="GlossySerpent/Listbox" renderer="Core/Listbox" targetType="CEGUI/Listbox" windowType="GlossySerpent/Listbox" />
+  <FalagardMapping lookNFeel="GlossySerpent/ListboxTransparent" renderer="Core/Listbox" targetType="CEGUI/Listbox" windowType="GlossySerpent/ListboxTransparent" />
+	<FalagardMapping lookNFeel="GlossySerpent/ListHeader" renderer="Core/ListHeader" targetType="CEGUI/ListHeader" windowType="GlossySerpent/ListHeader" />
+	<FalagardMapping lookNFeel="GlossySerpent/ListHeaderSegment" renderer="Core/ListHeaderSegment" targetType="CEGUI/ListHeaderSegment" windowType="GlossySerpent/ListHeaderSegment" />
+	<FalagardMapping lookNFeel="GlossySerpent/MultiColumnList" renderer="Core/MultiColumnList" targetType="CEGUI/MultiColumnList" windowType="GlossySerpent/MultiColumnList" />
+	<FalagardMapping lookNFeel="GlossySerpent/Spinner" renderer="Core/Default" targetType="CEGUI/Spinner" windowType="GlossySerpent/Spinner" />
+	<FalagardMapping lookNFeel="GlossySerpent/Tooltip" renderer="Core/Tooltip" targetType="CEGUI/Tooltip" windowType="GlossySerpent/Tooltip" />
+	<FalagardMapping lookNFeel="GlossySerpent/StaticImage" renderer="Core/StaticImage" targetType="DefaultWindow" windowType="GlossySerpent/StaticImage" />
+	<FalagardMapping lookNFeel="GlossySerpent/StaticText" renderer="Core/StaticText" targetType="DefaultWindow" windowType="GlossySerpent/StaticText" />
+	<FalagardMapping lookNFeel="GlossySerpent/ItemListbox" renderer="Core/ItemListbox" targetType="CEGUI/ItemListbox" windowType="GlossySerpent/ItemListbox" />
+	<FalagardMapping lookNFeel="GlossySerpent/ListboxItem" renderer="Core/ItemEntry" targetType="CEGUI/ItemEntry" windowType="GlossySerpent/ListboxItem" />
+	<FalagardMapping lookNFeel="GlossySerpent/GroupBox" renderer="Core/Default" targetType="CEGUI/GroupBox" windowType="GlossySerpent/GroupBox" />
+	<FalagardMapping lookNFeel="GlossySerpent/Menubar" renderer="Core/Menubar" targetType="CEGUI/Menubar" windowType="GlossySerpent/Menubar" />
+	<FalagardMapping lookNFeel="GlossySerpent/PopupMenu" renderer="Core/PopupMenu" targetType="CEGUI/PopupMenu" windowType="GlossySerpent/PopupMenu" />
+	<FalagardMapping lookNFeel="GlossySerpent/MenuItem" renderer="Core/MenuItem" targetType="CEGUI/MenuItem" windowType="GlossySerpent/MenuItem" />
+</GUIScheme>

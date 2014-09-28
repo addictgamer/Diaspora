@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<GUILayout version="4">
+	<Window type="DefaultWindow" name="root">
+		<Property name="MousePassThroughEnabled" value="true" />
+		TODO: Pretty main menu.
+	</Window>
+</GUILayout>
