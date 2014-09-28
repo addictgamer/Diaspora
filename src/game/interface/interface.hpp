@@ -17,7 +17,7 @@ namespace gnomal
 #define TITLESCREEN_BACKGROUND_SPRITE_PATH "data/interface/title/titlescreen.png"
 //CEGUI defines:
 extern std::string GUI_LAYOUT_MAINMENU;//= "gnomal-mainmenu.layout";
-extern std::string GUI_LAYOUT_FILE_SELECTOR;//= "file_selector.layout";
+//extern std::string GUI_LAYOUT_FILE_SELECTOR;//= "file_selector.layout";
 #define DEFAULT_CEGUI_SCHEME "TaharezLook"
 //#define DEFAULT_CEGUI_SCHEME "VanillaSkin"
 //Font filepaths
@@ -34,10 +34,6 @@ private:
 	//TODO: Hide all this in GEngine and create some wrapper for it.
 
 	CEGUI::Window *main_menu; //The root window for the main menu.
-
-	//TODO: Move this functionality to GEngine. You know, generalize it, make it reusable, and make it clean & simple.
-	GEngine::mgfx::d2d::D2D *world_data_window;
-	GEngine::mgfx::d2d::D2D *resource_browser_window;
 public:
 	GEngine::mui::Interface *interface; //Links and wraps the engine's interface.
 
@@ -83,6 +79,6 @@ public:
 	void setActiveWindow(CEGUI::Window &window);
 };
 
-extern Interface *interface;
+extern Interface interface;
 
 } //namespace gnomal

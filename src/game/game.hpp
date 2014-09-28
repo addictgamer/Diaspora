@@ -42,7 +42,7 @@ class World;
  * TODO:
  * Make this a base game class and then make the loader take a module, execute its createGame() function, and then execute all of its code, which can draw into this project's code as a base for that.
  */
-class GameBase
+class Game
 {
 protected:
 	GEngine::mnet::Server *server; //This is the server (for networking).
@@ -58,8 +58,8 @@ public:
 	bool quit; //Quit the game?
 
 	World *world;
-	explicit GameBase();
-	virtual ~GameBase();
+	explicit Game();
+	virtual ~Game();
 
 	virtual void update();
 
@@ -71,6 +71,6 @@ public:
 	//------Client Functions------
 	virtual void startClient();
 	virtual void clientUpdate();
-} extern *game;
+} extern game;
 
 } //namespace gnomal

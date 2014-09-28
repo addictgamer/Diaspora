@@ -11,18 +11,16 @@
 
 #include "../game.hpp"
 
-#include "cegui/gui_file_selector.hpp"
-
-#include "cegui/gui_game_selector.hpp"
-
 namespace gnomal
 {
 
-#define GAMEVIEW_Y 30
-#define GAMEVIEW_RIGHTEDGE 200
+//#define GAMEVIEW_Y 30
+#define GAMEVIEW_Y 0
+//#define GAMEVIEW_RIGHTEDGE 200
+#define GAMEVIEW_RIGHTEDGE 0
 
-std::string GUI_LAYOUT_MAINMENU = "gnomal-mainmenu.layout";
-std::string GUI_LAYOUT_FILE_SELECTOR = "file_selector.layout";
+std::string GUI_LAYOUT_MAINMENU = "diaspora-mainmenu.layout";
+//std::string GUI_LAYOUT_FILE_SELECTOR = "file_selector.layout";
 
 using namespace GEngine;
 
@@ -31,7 +29,6 @@ Interface::Interface()
 	active_window = nullptr;
 
 	main_menu = nullptr;
-	world_data_window = nullptr;
 }
 
 Interface::~Interface()
@@ -106,10 +103,10 @@ void Interface::update()
 							if ((*iter).mouseButton.button == sf::Mouse::Left)
 							{
 								//TODO: Do a check to make sure no interface element was clicked.
-								if (game->world)
+								if (game.world)
 								{
 									//TODO: Do something with it.
-									ws::Space *the_space = game->world->getSpaceAtCoordinates(*interface->windows[0], (*iter).mouseButton.x, (*iter).mouseButton.y);
+									ws::Space *the_space = game.world->getSpaceAtCoordinates(*interface->windows[0], (*iter).mouseButton.x, (*iter).mouseButton.y);
 									if (the_space)
 									{
 										std::cout << "Space (" << the_space->x << ", " << the_space->y << ", " << the_space->z << ") clicked\n";
@@ -133,7 +130,7 @@ void Interface::update()
 	try
 	{
 		//If the world exists, and the resource browser does not exist, and the cegui window exists, and the create world button exists (wouldn't exist if the current interface isn't the gm view one anymore), and the create world button is not visible...
-		/*if (game->world && !resource_browser_window && interface->getRootWindow(*interface->windows[0]) && interface->getRootWindow(*interface->windows[0])->getChild("Menubar/CreateWorld") && !interface->getRootWindow(*interface->windows[0])->getChild("Menubar/CreateWorld")->isEnabled())
+		/*if (game.world && !resource_browser_window && interface->getRootWindow(*interface->windows[0]) && interface->getRootWindow(*interface->windows[0])->getChild("Menubar/CreateWorld") && !interface->getRootWindow(*interface->windows[0])->getChild("Menubar/CreateWorld")->isEnabled())
 		{
 			//Create the resource browser window.
 
@@ -184,52 +181,6 @@ void Interface::drawLevelTwo()
 void Interface::drawLevelThree()
 {
 	interface->draw(); //Draw the interface.
-
-	if (world_data_window)
-	{
-		//world_data_window->window->renderText("TODO: Display data here.", 0, 0, 50, interface->font); //TODO: Uncomment this when ready for it.
-		//world_data_window->window->update();
-		//std::cout << "World data window.\n";
-	}
-
-	if (resource_browser_window)
-	{
-		//resource_browser_window->window->renderText("TODO: Make the resource browser GUI.", 0, 0, 30, interface->font);
-	}
-
-	/*if (gamestate == GAMESTATE_INGAME)
-	{
-		if (right_sidebar_mode == MODE_RESOURCE_BROWSER || right_sidebar_mode == MODE_RESOURCE_LIBRARY)
-		{
-			//TODO: This should only be called when something changes, or if the user demands a refresh (TODO: Refresh button).
-			//updateResourceFileList();
-			drawResourcePreview();
-		}
-
-		if (paintbrush && resource_brush_mode != 0 && game->world)
-		{
-			//If the mouse is over a space, draw the resource to paint at the mouse cursor.
-			int x, y;
-			interface->windows[0]->window->getMousePosition(&x, &y);
-			if (game->world->getSpaceAtCoordinates(*interface->windows[0], x, y))
-			{
-				//ws::Space *the_space = game->world->getSpaceAtCoordinates(*interface->windows[0], x, y);
-				//std::cout << "Space (" << the_space->x << ", " << the_space->y << ", " << the_space->z << ") hover over.\n";
-				switch (resource_brush_mode)
-				{
-					case 1:
-						//Paint mode.
-						//selected_resource->sprite->setScale((float)((float)(SPACE_SPRITE_DIMENSION) / (float)selected_resource->getWidth()), (float)((float)(SPACE_SPRITE_DIMENSION) / (float)selected_resource->getHeight()));
-						//selected_resource->setLoc(x - (SPACE_SPRITE_DIMENSION / 2), y - (SPACE_SPRITE_DIMENSION / 2));
-						//selected_resource->draw();
-						paintbrush->sprite->setScale((float)((float)(SPACE_SPRITE_DIMENSION) / (float)paintbrush->getWidth()), (float)((float)(SPACE_SPRITE_DIMENSION) / (float)paintbrush->getHeight()));
-						paintbrush->setLoc(x - (SPACE_SPRITE_DIMENSION / 2), y - (SPACE_SPRITE_DIMENSION / 2));
-						paintbrush->draw(*interface->windows[0]);
-						break;
-				}
-			}
-		}
-	}*/
 }
 
 void Interface::windowDraw()
@@ -243,27 +194,7 @@ void Interface::windowUpdate()
 
 	if (main_window.closed) //Check if the window was closed.
 	{
-		if (gamestate == GAMESTATE_LOADER)
-		{
-			loader.exit(true); //Quit.
-		}
-		else
-		{
-			game->quit = true;
-		}
-	}
-
-	if (world_data_window)
-	{
-		//world_data_window->window->update(); //TODO: Uncomment this when ready for it.
-	}
-
-	if (resource_browser_window)
-	{
-		//CEGUI::System::getSingleton().renderAllGUIContexts(); //Render all of CEGUI's stuffs. //TODO: Do this properly (Probably means that I need to move all this code into the engine and have it call this after all the windows have had their CEGUI stuff handled).
-		//resource_browser_window_cegui_context->draw();
-		//resource_browser_window_cegui_context->getMouseCursor().draw(); //Force draw it because it doesn't seem to want to work otherwise.
-		//resource_browser_window->window->update(); //TODO: Uncomment this if I decide to put the resource stuff in a seperate window.
+			game.quit = true;
 	}
 }
 
@@ -292,6 +223,6 @@ void Interface::setActiveWindow(CEGUI::Window &window)
 	active_window = &window;
 }
 
-Interface *interface;
+Interface interface;
 
 } //namespace gnomal

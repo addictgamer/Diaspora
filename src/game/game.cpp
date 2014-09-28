@@ -23,8 +23,6 @@
 
 #include "game.hpp"
 
-#include "loader.hpp"
-
 GEngine::maudio::AudioManager audio; //The audio module.
 
 using namespace GEngine;
@@ -35,12 +33,12 @@ namespace gnomal
 #define PORT 9899
 
 #define GAME_NAME "Diaspora"
-#define GAME_VERSION "0"
+#define GAME_VERSION "2"
 
 #define WINDOWWIDTH 800
 #define WINDOWHEIGHT 600
 #define FULLSCREEN false
-#define WINDOWNAME "Diaspora v00000001" //TODO: Make this thing be created at runtime.
+#define WINDOWNAME "Diaspora v00000002" //TODO: Make this thing be created at runtime.
 
 mgfx::d2d::D2D d2d; //The 2D interface thingy.
 
@@ -48,14 +46,14 @@ std::thread *t_console = nullptr; //The thread that will be handling console inp
 
 std::vector<std::string> console_input; //Whatever the user types into the console will be stored here.
 
-Gamestate gamestate = GAMESTATE_TITLE
+Gamestate gamestate = GAMESTATE_TITLE;
 
-GameBase *game = nullptr;
+Game game;
 
 void readConsole()
 {
 	//Just read in data from the console.
-	while (!game->quit)
+	while (!game.quit)
 	{
 		std::string temp_str = "";
 
@@ -93,7 +91,7 @@ void processServerCommand(std::string command, std::vector<std::string> *args = 
 	if (command == "/quit")
 	{
 		std::cout << "\n***SHUTTING DOWN***\n";
-		game->quit = true;
+		game.quit = true;
 	}
 	else if (command == "/define")
 	{
@@ -166,7 +164,7 @@ void processServerCommand(std::string command, std::vector<std::string> *args = 
 	}
 }
 
-GameBase::GameBase()
+Game::Game()
 {
 	//gamestate = GAMESTATE_TITLE;
 	server = nullptr;
@@ -182,7 +180,7 @@ GameBase::GameBase()
 	version = "";
 }
 
-GameBase::~GameBase()
+Game::~Game()
 {
 	//gamestate = GAMESTATE_TITLE;
 	if (server)
@@ -215,7 +213,7 @@ GameBase::~GameBase()
 	}
 }
 
-void GameBase::update()
+void Game::update()
 {
 	if (server)
 	{
@@ -230,11 +228,11 @@ void GameBase::update()
 	//--Draw everything that needs drawing.--
 	//---------------------------------------
 
-	interface->windowUpdate(); //Update all of the windows.
+	interface.windowUpdate(); //Update all of the windows.
 
-	interface->update(); //Update the interface.
+	interface.update(); //Update the interface.
 
-	interface->drawLevelOne(); //Backgrounds and whatnot.
+	interface.drawLevelOne(); //Backgrounds and whatnot.
 
 	//Now update the gameworld.
 	if (gamestate == GAMESTATE_INGAME)
@@ -242,18 +240,18 @@ void GameBase::update()
 		if (world)
 		{
 			//TODO: Render the world and let the user modify it.
-			world->render(d2d, interface->interface->font);
+			world->render(d2d, interface.interface->font);
 		}
 	}
 
-	interface->drawLevelTwo(); //Unknown.
+	interface.drawLevelTwo(); //Unknown.
 
-	interface->drawLevelThree(); //Draw interface (cegui).
+	interface.drawLevelThree(); //Draw interface (cegui).
 
-	interface->windowDraw(); //Draw all of the windows.
+	interface.windowDraw(); //Draw all of the windows.
 }
 
-void GameBase::startServer()
+void Game::startServer()
 {
 	std::cout << "Starting server.\n";
 	server = new mnet::Server;
@@ -278,7 +276,7 @@ void GameBase::startServer()
 	//game_ai[0]->startup();
 }
 
-void GameBase::serverUpdate()
+void Game::serverUpdate()
 {
 	std::cout << "Updating server.\n";
 	server->updateClients(); //Update all the connected clients.
@@ -307,43 +305,11 @@ void GameBase::serverUpdate()
 		//Let's let the user move the camera around.
 		if (d2d.window)
 		{
-			//TODO: Search unhandled events instead.
-			//std::vector<sf::Event>::iterator iter = d2d.window->events.begin();
-			std::vector<GEngine::mui::unhandledEvent>::iterator iter = interface->interface->unhandled_events.begin();
-			//for (; iter != d2d.window->events.end(); ++iter) //Loop through all the events.
-			for (; iter != interface->interface->unhandled_events.end(); ++iter) //Loop through all the events.
+			std::vector<GEngine::mui::unhandledEvent>::iterator iter = interface.interface->unhandled_events.begin();
+			for (; iter != interface.interface->unhandled_events.end(); ++iter) //Loop through all the events.
 			{
 				sf::Event &event = (*iter).event;
 				mgfx::Window &window = (*iter).window;
-				/*switch ((*iter).type)
-				{
-					case sf::Event::KeyPressed:
-						switch ((*iter).key.code)
-						{
-							case sf::Keyboard::Left:
-								world->moveCamera(-1, 0, 0); //Move camera left.
-								break;
-							case sf::Keyboard::Right:
-								world->moveCamera(+1, 0, 0); //Move camera right.
-								break;
-							case sf::Keyboard::Up:
-								world->moveCamera(0, -1, 0); //Move camera Up.
-								break;
-							case sf::Keyboard::Down:
-								world->moveCamera(0, +1, 0); //Move camera Down.
-								break;
-							case sf::Keyboard::Dash: //Minus key
-								world->moveCamera(0, 0, -1); //Move camera Below.
-								break;
-							case sf::Keyboard::Equal: //Equals key
-								world->moveCamera(0, 0, +1); //Move camera Above.
-							default:
-								break;
-						}
-						break;
-					default:
-						break;
-				}*/
 				switch (event.type)
 				{
 					case sf::Event::KeyPressed:
@@ -370,6 +336,11 @@ void GameBase::serverUpdate()
 								break;
 						}
 						break;
+					case sf::Event::MouseButtonPressed:
+						if (event.mouseButton.button == sf::Mouse::Left) {
+							//Do something? Used to click a space. But that's not currently implemented...
+						}
+						break;
 					default:
 						break;
 				}
@@ -378,13 +349,13 @@ void GameBase::serverUpdate()
 	}
 }
 
-bool GameBase::createWorld()
+bool Game::createWorld()
 {
 	std::cout << "Creating world.\n";
 	world = new World;
 	if (!world->genTestworld(d2d)) //Generate new world, with error checking.
 	{
-		std::cout << "Error: (GameBase::createWorld()) Failed to generate new world.\n";
+		std::cout << "Error: (Game::createWorld()) Failed to generate new world.\n";
 		// Now 'reset' the world.
 		delete world;
 		world = nullptr;
@@ -394,7 +365,7 @@ bool GameBase::createWorld()
 	return true;
 }
 
-void GameBase::startClient()
+void Game::startClient()
 {
 	std::cout << "Starting client.\n";
 	/*client = new mnet::Client(); //Initialize a new client.
@@ -406,7 +377,7 @@ void GameBase::startClient()
 	t_network = new std::thread(&mnet::Client::update, client); //Start the client thread. */
 }
 
-void GameBase::clientUpdate()
+void Game::clientUpdate()
 {
 	std::cout << "Updating client.";
 	std::string data_received = client->getData(); //Get any data the client may have recieved.
@@ -447,8 +418,8 @@ int main(int argc, char* argv[])
 
 	//TODO: Move music to the game module.
 	GEngine::maudio::Sound title_music;
-	title_music.load("music/Celtic Fairy Music - Moon Fairies.mp3", true, true); //Loop and stream.
-	//audio.playMusic(title_music);
+	title_music.load("music/Epic Steampunk Music - Steampunk Spies-3T-tSEwHw4k.mp3", true, true); //Loop and strean.
+	audio.playMusic(title_music);
 
 	//Setup the d2d, with error checking.
 	if (!d2d.setup())
@@ -457,9 +428,7 @@ int main(int argc, char* argv[])
 		return false;
 	}
 
-	interface = new Interface; //Allocate the interface.
-
-	if (!interface->initialize(d2d, WINDOWWIDTH, WINDOWHEIGHT, FULLSCREEN, WINDOWNAME)) //Initialize the interface, with error checking.
+	if (!interface.initialize(d2d, WINDOWWIDTH, WINDOWHEIGHT, FULLSCREEN, WINDOWNAME)) //Initialize the interface, with error checking.
 	{
 		std::cout << "Error: Failed to initialize the interface.\n";
 		return false;
@@ -469,16 +438,15 @@ int main(int argc, char* argv[])
 
 	t_console = new std::thread(&readConsole); //Start reading the console.
 
-	game->update();
+	while (!game.quit) {
+		game.update();
+	}
 
 	if (t_console)
 	{
 		t_console->join();
 		delete t_console;
 	}
-
-	if (game)
-		delete game;
 
 	return 0; //Success.
 }

@@ -204,8 +204,8 @@ void World::render(GEngine::mgfx::d2d::D2D &d2d, sf::Font &font)
 				{
 
 					//First calculate how many spaces will fit on screen (TODO: should probably put this in its own function or something of that ilk. Maybe only calculate it at the beginning and whenever the screen is resized?):
-					int h = d2d.window->getHeight() - interface->getGameviewY();
-					int w = d2d.window->getWidth() - interface->getGameviewRightedge();
+					int h = d2d.window->getHeight() - interface.getGameviewY();
+					int w = d2d.window->getWidth() - interface.getGameviewRightedge();
 					int num_horizontal = ceil((float)w / (float)SPACE_SPRITE_DIMENSION);
 					int num_horizontal_original = num_horizontal; //Preserve this for use later in determining draw coordinates.
 					int num_vertical = ceil((float)h / (float)SPACE_SPRITE_DIMENSION);
@@ -281,7 +281,7 @@ void World::render(GEngine::mgfx::d2d::D2D &d2d, sf::Font &font)
 					//Calculate draw offset.
 					int draw_offset_x = num_horizontal_original - num_horizontal;
 					//std::cout << "draw_offset_x = " << draw_offset_x << "\n";
-					//int draw_offset_y = interface->getGameviewY() + (num_vertical_original - num_vertical);
+					//int draw_offset_y = interface.getGameviewY() + (num_vertical_original - num_vertical);
 					int draw_offset_y = num_vertical_original - num_vertical;
 					//std::cout << "draw_offset_y = " << draw_offset_y << "\n";
 
@@ -297,7 +297,7 @@ void World::render(GEngine::mgfx::d2d::D2D &d2d, sf::Font &font)
 							{
 								int draw_x = (x + draw_offset_x) * SPACE_SPRITE_DIMENSION;
 								//std::cout << "draw_x = " << draw_x << "\n";
-								int draw_y = interface->getGameviewY() + ((y + draw_offset_y) * SPACE_SPRITE_DIMENSION);
+								int draw_y = interface.getGameviewY() + ((y + draw_offset_y) * SPACE_SPRITE_DIMENSION);
 								//std::cout << "draw_y = " << draw_y << "\n";
 								current->render(d2d, draw_x, draw_y, space_no_sprite_sprite, font, SPACE_SPRITE_DIMENSION, SPACE_SPRITE_DIMENSION); //Render the current space.
 								//std::cout << "RENDERING (x,y): (" << x << ", " << y << ").\n";
@@ -341,8 +341,8 @@ ws::Space* World::getSpaceAtCoordinates(GEngine::mgfx::d2d::D2D &d2d, int x, int
 			if (camera->container_space)
 			{
 				//Grab the width and height of the window.
-				int h = d2d.window->getHeight() - interface->getGameviewY();
-				int w = d2d.window->getWidth() - interface->getGameviewRightedge();
+				int h = d2d.window->getHeight() - interface.getGameviewY();
+				int w = d2d.window->getWidth() - interface.getGameviewRightedge();
 				if (x > w || x < 0 || y > h || y < 0)
 					return nullptr;
 				//Calculate how many spaces fit horizontally and vertically.
